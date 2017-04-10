@@ -1,0 +1,543 @@
+html {
+  font-family: "微软雅黑";
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+/* HTML5 媒体文件跟 img 保持一致 */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  object-fit: fill;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* IE bug fixed: th 不继承 text-align*/
+
+th {
+  text-align: inherit;
+}
+
+
+/* 去除默认边框 */
+
+fieldset,
+img {
+  border: 0;
+}
+
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+
+iframe {
+  display: block;
+}
+
+
+/* 去掉 firefox 下此元素的边框 */
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+
+/* 一致的 del 样式 */
+
+del {
+  text-decoration: line-through;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+/* 去掉列表前的标识, li 会继承 */
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+
+caption,
+th {
+  text-align: left;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+
+/* 统一上标和下标 */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+/*resetcss结束*/
+
+body {
+  /*max-width: 900px;*/
+  font-size: 14px;
+  font-family: "微软雅黑";
+  list-style: none;
+  color: #333333;
+  min-width: 1200px;
+  overflow: auto;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+section {
+  background-color: #fff;
+}
+
+
+/*解决ios样式问题*/
+
+input,
+button,
+select,
+textarea {
+  font-family: "微软雅黑";
+  outline: none;
+  border: 0;
+  background: #fff;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  resize: none;
+}
+
+a,
+span,
+p,
+li,
+img {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+
+/*label { pointer-events:none;}*/
+
+select {
+  width: 70%;
+  border: 0;
+  height: 30px;
+  color: #aaa;
+}
+
+option {
+  color: black;
+}
+
+textarea {
+  border: 0;
+  width: 200px;
+  vertical-align: top;
+  padding: 7px 0;
+}
+
+textarea::placeholder {
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.absolute {
+  position: absolute;
+
+}
+.bottom0 {
+  bottom: 0;
+}
+.font12 {
+  font-size: 12px;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+.middle {
+  vertical-align: middle;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mr4 {
+  margin-right: 4px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt9 {
+  margin-top: -9.5px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt86 {
+  margin-top: 86px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+
+.w1 {
+  width: 100% !important;
+}
+.w08 {
+  width: 80%;
+}
+.w07 {
+  width: 72%;
+}
+.w8 {
+  width: 8px;
+}
+.w20 {
+  width: 20px !important;
+}
+.h16 {
+  height: 16px;
+}
+.h30 {
+  height: 30px;
+}
+.h50 {
+  height: 50px;
+}
+.h86 {
+  height: 86px;
+}
+.r10 {
+  right: 10px;
+}
+
+.prl16 {
+  padding: 0 16px;
+}
+
+.bg-blue {
+  background-color: #00a0e9;
+  color: #fff
+}
+
+.color-yellow {
+  color: #f4a51f;
+}
+
+.color-light {
+  color: #999999;
+}
+
+.color-blue {
+  color: #00a0e9 !important;
+}
+
+.color-gray {
+  color: #ddd;
+}
+
+.color-red {
+  color: red;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eeeeee;
+}
+.border-top {
+  border-top: 1px solid #eeeeee;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.clearfix {
+  *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+/* 底部导航 */
+
+.index-footnav {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  border-top: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+
+.index-footnav li {
+  width: 25%;
+  height: 44px;
+  text-align: center;
+  padding: 3px 0;
+  float: left;
+  color: #333333;
+}
+
+.index-footnav li img {
+  width: 25px;
+}
+
+.index-footnav li span {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+}
+
+
+/*公共样式*/
+
+header {
+width: 100%;
+height: 150px;
+background-color: #eaeff2;
+
+}
+aside {
+  width: 200px;
+  height: 900px;
+  margin-top: 20px;
+  float: left;
+  background-color: #eaeff2;
+}
+footer {
+  width: 100%;
+  height: 200px;
+  margin-top:20px;
+  background-color: #000000;
+}
+.main {
+  height: 900px;
+  margin: 20px 0 0 220px;
+  background-color: #eaeff2;
+}
+
+.icon-back {
+  width: 12px;
+  margin-top: 17px;
+  padding-left: 16px;
+  position: absolute;
+  left: 0;
+}
+
+
+/*空白页*/
+
+.blank {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  margin: -90px;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+/*加载更多*/
+.more {
+  text-align: center;
+  margin-bottom: 15px;
+}
