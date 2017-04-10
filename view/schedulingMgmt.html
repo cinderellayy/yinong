@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>排产管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main"> 
+   <nav class="nav-head">
+     <span>生成计划<i class="color-gray arrow">></i>排产管理</span>
+   </nav>
+   <div class="scheduling-content">
+     <div class="scheduling-search">
+      <input type="text">
+      <button>搜索</button>
+      <span class="delete">导出</span>
+      <span class="add">添加</span>
+    </div>
+    <div class="scheduling-detail">
+      <table>
+        <tr>
+          <th class="table-head">大棚名称</th>
+          <th class="table-head">排产作物</th>
+          <th class="table-head">种植品种</th>
+          <th class="table-head">排产面积</th>
+          <th class="table-head">排产时间</th>
+          <th class="table-head">结束时间</th>
+          <th class="table-head">操作</th>
+        </tr>
+        <tr>
+          <td>插秧机</td>
+          <td>开心农村</td>
+          <td>玉米</td>
+          <td>100m²</td>
+          <td>2017-04-10</td>
+          <td>2017-04-10</td>
+          <td>
+            <a href="schedulingView.html" class="mr20">查看</a>
+            <a class="mr20">编辑</a>
+            <a class="mr20">确认</a>
+            <span >删除</span>
+          </td>
+        </tr>
+       <tr>
+          <td>插秧机</td>
+          <td>开心农村</td>
+          <td>玉米</td>
+          <td>100m²</td>
+          <td>2017-04-10</td>
+          <td>2017-04-10</td>
+          <td>
+           <a href="schedulingView.html" class="mr20">查看</a>
+            <span class="mr20">编辑</span>
+            <span class="mr20">确认</span>
+            <span>删除</span>
+          </td>
+        </tr>
+         <tr>
+          <td>插秧机</td>
+          <td>开心农村</td>
+          <td>玉米</td>
+          <td>100m²</td>
+          <td>2017-04-10</td>
+          <td>2017-04-10</td>
+          <td>
+           <a href="schedulingView.html" class="mr20">查看</a>
+            <span class="mr20">编辑</span>
+            <span class="mr20">确认</span>
+            <span>删除</span>
+          </td>
+        </tr>
+      </table>
+      <div class="page">
+        <div class="left">
+          <span class="mr20">共21条</span>
+          <span>共2页</span>
+        </div>  
+        <div class="digg"> 
+          <span class="disabled change">上一页</span>
+          <a href="#?page=1" class="current">1</a>
+          <a href="#?page=2">2</a>
+          <a href="#?page=3">3</a>
+          ...
+          <a href="#?page=199">10</a>
+          <a href="#?page=2" class="change">下一页</a>
+          <span>跳转 <input type="text" value="2"></span>
+          <span class="go">GO</span>
+        </div> 
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<!-- <script src="../js/angular.js"></script> -->
+<script src="../js/main.js"></script>
+</html>

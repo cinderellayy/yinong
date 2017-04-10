@@ -1,0 +1,141 @@
+/*公共样式*/
+.arrow {
+  font-size: 18px;
+  margin:0 6px;
+}
+.nav-head {
+  background-color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.add{
+ background:url("../images/add.png") #ffa018 no-repeat;
+ margin-right: 16px;
+}
+.delete {
+   background:url("../images/add.png") #e0e0e0 no-repeat;
+}
+.add,.delete {
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    float: right;
+    background-position: 10px 8px;
+    background-size: 15px auto;
+    display: inline-block;
+    padding: 0 13px 0 31px;
+}
+
+.back {
+  border: 1px solid #eeeeee;
+  padding: 6px 14px;
+  margin: 30px auto;
+  border-radius: 4px;
+
+
+}
+/*分页样式*/
+.page {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+}
+.digg { 
+padding: 3px;
+ margin: 3px; 
+ text-align: center;
+ float: right;
+} 
+.digg input {
+  width: 40px;
+  height: 23px;
+  text-align: center;
+  border: #eee 1px solid; 
+}
+.digg .go {
+  background-color: #ffa018;
+  color: #fff;
+  padding:4px 6px; 
+  display: inline-block;
+}
+.digg a { 
+padding:2px 5px; 
+margin: 2px; 
+color: #333333;
+text-decoration: none 
+} 
+.digg a:hover,.digg a:active,.digg .current{ 
+color:#ffa018;
+} 
+.digg .change {
+border: #eee 1px solid; 
+padding: 2px 5px;
+}
+.digg span.disabled { 
+ color: #ddd; 
+} 
+
+
+/*排产管理模块*/
+.scheduling-main {
+  margin-left: 177px;
+  position: relative;
+
+}
+.scheduling-content {
+  height: 450px;
+  margin:16px 0 0 6px;
+  padding: 8px 20px;
+  background-color: #ffffff;
+}
+.scheduling-search input{
+  width: 210px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing:border-box;
+  border: 1px solid #dddddd;
+} 
+.scheduling-search button {
+  height: 30px;
+  line-height: 30px;
+  width: 60px;
+  width: 60px;
+  background-color: #479e7d;
+  border: 1px solid #479e7d;
+  box-sizing:border-box;
+  color: #ffffff;
+  margin-left: -4px;
+}
+.scheduling-detail {
+  text-align: center;
+}
+.scheduling-detail table {
+  width: 100%;
+  margin-top: 12px;
+  border:1px solid #eeeeee;
+  text-align: left;
+
+}
+.scheduling-detail .table-head{
+  color: #ffffff;
+  background-color: #479e7d;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+}
+.scheduling-detail td {
+   padding: 0 20px;
+}
+.scheduling-detail tr:nth-child(2n) {
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+}
+.scheduling-detail tr:nth-child(2n+1) {
+   height: 40px;
+  line-height: 40px;
+   padding: 0 20px;
+  background-color: #f7feff;
+}
