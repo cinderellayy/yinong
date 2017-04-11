@@ -1,4 +1,27 @@
 /*公共样式*/
+.color-e0e {
+  color: #e0e0e0;
+}
+.bg-green {
+ background-color: #479e7d;
+ color:#ffffff;
+}
+.bg-yellow {
+  background-color: #ffa018;
+  color:#ffffff;
+}
+.bg-gray {
+  background-color: #e0e0e0;
+  color:#ffffff;
+}
+.button {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  box-sizing:border-box;
+}
 .arrow {
   font-size: 18px;
   margin:0 6px;
@@ -28,14 +51,7 @@
     padding: 0 13px 0 31px;
 }
 
-.back {
-  border: 1px solid #eeeeee;
-  padding: 6px 14px;
-  margin: 30px auto;
-  border-radius: 4px;
 
-
-}
 /*分页样式*/
 .page {
   position: absolute;
@@ -85,7 +101,7 @@ padding: 2px 5px;
 
 }
 .scheduling-content {
-  height: 450px;
+  height: 600px;
   margin:16px 0 0 6px;
   padding: 8px 20px;
   background-color: #ffffff;
@@ -96,6 +112,7 @@ padding: 2px 5px;
   line-height: 30px;
   box-sizing:border-box;
   border: 1px solid #dddddd;
+  text-indent: 12px;
 } 
 .scheduling-search button {
   height: 30px;
@@ -108,14 +125,11 @@ padding: 2px 5px;
   color: #ffffff;
   margin-left: -4px;
 }
-.scheduling-detail {
-  text-align: center;
-}
+
 .scheduling-detail table {
   width: 100%;
   margin-top: 12px;
-  border:1px solid #eeeeee;
-  text-align: left;
+  /*text-align: left;*/
 
 }
 .scheduling-detail .table-head{
@@ -128,14 +142,37 @@ padding: 2px 5px;
 .scheduling-detail td {
    padding: 0 20px;
 }
-.scheduling-detail tr:nth-child(2n) {
+.scheduling-detail tr{
   height: 40px;
   line-height: 40px;
-  background-color: #ffffff;
+  padding: 0 20px;
 }
-.scheduling-detail tr:nth-child(2n+1) {
-   height: 40px;
-  line-height: 40px;
-   padding: 0 20px;
+
+.bg-table tr:nth-child(2n){
+    background-color: #ffffff;
+}
+.bg-table tr:nth-child(2n+1){
   background-color: #f7feff;
+}
+
+/*排产计划*/
+.zuowu,
+.chanliang {
+  color:#ffffff;
+  padding: 0 16px;
+  text-align: center; 
+  
+}
+.zuowu {
+  background-color: #ffa018;
+}
+.chanliang {
+  background-color: #479e7d;
+
+}
+.zuowu-chanliang {
+  position: relative;
+}
+.zuowu-chanliang:hover .scheduling-fuceng {
+  display: block;
 }

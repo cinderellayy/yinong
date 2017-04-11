@@ -10,7 +10,7 @@ body {
   font-family: "微软雅黑";
   list-style: none;
   color: #333333;
-  min-width: 900px;
+  min-width: 1200px;
   overflow: auto;
   background-color: #f7f7f7;
 }
@@ -223,10 +223,11 @@ p,
 li,
 img {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  display: inline-block;
 }
 
-
+a,span {
+   display: inline-block;
+}
 li {
   list-style: none;
 }
@@ -268,7 +269,13 @@ li {
 .text-right {
   text-align: right;
 }
+.text-left {
+  text-align: left;
+}
 
+.mr-4{
+   margin-right: -4px;
+}
 .mr4 {
   margin-right: 4px;
 }
@@ -303,7 +310,9 @@ li {
 .mb20 {
   margin-bottom: 20px;
 }
-
+.mt2 {
+  margin-top: 2px;
+}
 .mt9 {
   margin-top: -9.5px;
 }
@@ -338,6 +347,10 @@ li {
 .h16 {
   height: 16px;
 }
+.h26 {
+  height: 26px !important;
+  line-height: 26px !important;
+}
 .h30 {
   height: 30px;
 }
@@ -350,11 +363,15 @@ li {
 .r10 {
   right: 10px;
 }
-
+.pl0 {
+  padding-left: 0 !important;
+}
 .prl16 {
   padding: 0 16px;
 }
-
+.pb10{
+  padding-bottom: 10px;
+}
 .bg-blue {
   background-color: #00a0e9;
   color: #fff
@@ -386,7 +403,12 @@ li {
 .border-top {
   border-top: 1px solid #eeeeee;
 }
-
+.border-right {
+  border-right: 1px solid #eeeeee;
+}
+.border {
+  border: 1px solid #eeeeee;
+}
 .pb0 {
   padding-bottom: 0;
 }
@@ -454,7 +476,7 @@ background-color: rgba(0, 0, 0, 0.71);
 }
 aside {
   width: 177px;
-  height: 580px;
+  height: 690px;
   float: left;
   background-color: rgba(0, 0, 0, 0.61);
 }
@@ -493,4 +515,79 @@ footer {
 .more {
   text-align: center;
   margin-bottom: 15px;
+}
+/*弹窗*/
+.dialog-scheduling{
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+}
+.dialog-content {
+  background-color: #fff;
+  padding: 16px 20px;
+  margin: 100px auto; 
+  width: 600px;
+}
+
+.dialog-content table {
+  background-color: transparent;
+  width: 60%;
+  margin: 0 auto;
+}
+.dialog-content table tr {
+  background-color: transparent;
+}
+
+/*浮层*/
+.scheduling-fuceng {
+    background-color: rgba(0,0,0,.6);
+    color: #ffffff;
+    padding: 14px;
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    z-index: 999999;
+    text-align: left;
+}
+.select-160 {
+  height: 30px;
+  border: 1px solid #dddddd;
+  width: 160px;
+  text-indent: 12px;
+}
+.select-210 {
+  height: 30px;
+  border: 1px solid #dddddd;
+  width: 210px;
+  text-indent: 12px;
+}
+.select-72 {
+  height: 30px;
+  border: 1px solid #dddddd;
+  width: 72px;
+  text-indent: 12px;
+}
+/*table月份*/
+.table-month td:nth-child(2n+1){
+  background-color: #e0e0e0;
+  width: 91px;
+}
+.table-month td:nth-child(2n){
+  width: 160px;
+  overflow: hidden;
+
+}
+.tr-26 tr{
+  height: 26px !important;
+  line-height: 26px !important;;
+  padding: 0 20px;
+}
+.tr-26 tr span{
+  height: 25px;
+  line-height: 25px;;
+  margin: 1px -4px 0 0;
 }

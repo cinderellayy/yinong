@@ -182,7 +182,7 @@ a.download span{
 /*--- Experience Starts Here ----*/
 .experience{
 	background:#f1f2f7;
-	min-height:390px;
+	min-height:600px;
 }
 .exp-top{
 	padding:2em 0;
@@ -272,7 +272,7 @@ label.book{
 	width:40%;
 	text-align:right;
 	position:absolute;
-	top:12em;
+	top:9em;
 	left: 5.8em;
 }
 .exp-devide-grid-left:before{
@@ -820,7 +820,7 @@ p.copyright a:hover{
 		left: 36.2em;
 	}
 	.experience {
-		min-height: 390px;
+		min-height: 600px;
 	}
 	.education {
 		margin-top: 38%;
@@ -881,7 +881,7 @@ p.copyright a:hover{
 		margin-bottom: 2em;
 	}
 	.experience {
-		min-height: 390px;
+		min-height: 600px;
 	}
 	span.devide-line {
 		height: 246px;
@@ -971,7 +971,7 @@ p.copyright a:hover{
 		font-size:15px;
 	}
 	.experience {
-		min-height: 390px;
+		min-height: 600px;
 	}
 	span.devide-line {
 		height: 246px;
@@ -1076,7 +1076,7 @@ p.copyright a:hover{
 		height: 246px;
 	}	
 	.experience {
-		min-height: 390px;
+		min-height: 600px;
 	}
 	.skill-grid h3 {
 		font-size: 16px;
