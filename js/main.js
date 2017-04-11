@@ -19,6 +19,15 @@
   $('.close-edit').click(function () {
     $('.scheduling-edit-content').removeClass('show').addClass('hide');
   })
-
+  //添加排产管理
+  $('.scheduling-add').click(function () {
+    $('.scheduling-add-content').removeClass('hide').addClass('show');
+  })
+   $('.close-add').click(function () {
+    $('.scheduling-add-content').removeClass('show').addClass('hide');
+  })
+  $('.jidi-address').click(function () {
+    $(this).addClass('add-active').siblings().removeClass('add-active');
+  })
 
 })()

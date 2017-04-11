@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>排产管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>生产计划<i class="color-gray arrow">></i>排产管理</span>
+    </nav>
+    <div class="scheduling-content">
+      <div class="scheduling-search">
+        <input type="text">
+        <button>搜索</button>
+        <span class="delete">导出</span>
+        <span class="scheduling-add">添加</span>
+      </div>
+      <div class="scheduling-detail bg-table">
+        <table class="text-left">
+          <tr>
+            <th class="table-head">大棚名称</th>
+            <th class="table-head">排产作物</th>
+            <th class="table-head">种植品种</th>
+            <th class="table-head">排产面积</th>
+            <th class="table-head">排产时间</th>
+            <th class="table-head">结束时间</th>
+            <th class="table-head">操作</th>
+          </tr>
+          <tr>
+            <td>插秧机</td>
+            <td>开心农村</td>
+            <td>玉米</td>
+            <td>100m²</td>
+            <td>2017-04-10</td>
+            <td>2017-04-10</td>
+            <td>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>插秧机</td>
+            <td>开心农村</td>
+            <td>玉米</td>
+            <td>100m²</td>
+            <td>2017-04-10</td>
+            <td>2017-04-10</td>
+            <td>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>插秧机</td>
+            <td>开心农村</td>
+            <td>玉米</td>
+            <td>100m²</td>
+            <td>2017-04-10</td>
+            <td>2017-04-10</td>
+            <td>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+            </td>
+          </tr>
+        </table>
+        <div class="page">
+          <div class="left">
+            <span class="mr20">共21条</span>
+            <span>共2页</span>
+          </div>
+          <div class="digg">
+            <span class="change">上一页</span>
+            <a href="#?page=1" class="current">1</a>
+            <a href="#?page=2">2</a>
+            <a href="#?page=3">3</a> ...
+            <a href="#?page=199">10</a>
+            <span href="#?page=2" class="change">下一页</span>
+            <span>跳转 <input type="text" value="2"></span>
+            <span class="go">GO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- 添加排产管理已选基地休耕状态-->
+    <div class="dialog-scheduling scheduling-add-content">
+      <div class="dialog-content mt20">
+      <p class="center border-bottom pb16">添加排产计划<span class="right color-gray close-add">X</span></p>
+      <div class="add-detail mb10">
+          <p class="mb10"><span class="mr30">种植区:</span><select class="select-160 mr20">
+            <option>BJ-01-01号大棚</option>
+            <option>BJ-01-01号大棚</option>
+          </select>
+            作物种类：
+          <select class="select-160">
+              <option>小黄瓜</option>
+            <option>茄子</option>
+          </select><p>
+          <p class="mb10">
+            种植品种：
+          <select class="select-160 mr20">
+            <option>无品种</option>
+            <option>西兰花</option>
+          </select>
+            种植标准：
+           <select class="select-160">
+            <option>无机</option>
+             <option>有机</option>
+          </select>
+          </p>
+          <p class="mb10">
+            种苗来源：
+          <select class="select-160 mr20">
+            <option>无机</option>
+            <option>自繁</option>
+            <option>购买</option>
+          </select>
+          </p>
+        </div>
+      <p class="text-left border-bottom pb10">休耕时间</p>
+      <div class="add-detail mb10">
+          <p>定植时间：
+          <input type="date" class="select-160 mr20">
+          采收开始：
+           <input type="date" class="select-160">
+        </p>
+         <p class="mb10">植种结束：
+          <input type="date" class="select-160 mr20">
+          种植面积：
+          <input type="text" class="pinzhong"> <span>亩/3.9亩可用</p>
+        </p>
+       <p>预估产量：
+          <select class="select-160 mr20">
+            <option>亩产量</option>
+            <option>亩产量</option>
+          </select>
+      </div>
+      <p class="text-left border-bottom pb10 mb10">亩商品量(kg/亩)</p>
+          <table class="border table-month" border="1">
+            <tr>
+              <td>1月份</td>
+              <td></td>
+              <td>2月份</td>
+              <td></td>
+              <td>3月份</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4月份</td>
+              <td></td>
+              <td>5月份</td>
+              <td></td>
+              <td>6月份</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7月份</td>
+              <td></td>
+              <td>8月份</td>
+              <td></td>
+              <td>9月份</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10月份</td>
+              <td></td>
+              <td>11月份</td>
+              <td></td>
+              <td>12月份</td>
+              <td></td>
+            </tr>
+          </table>
+          <p class="text-right mt20">总产量: 0kg/亩</p>
+      <div class="center mt20">
+        <span class="button bg-yellow mr20">保存</span>
+        <span class="button bg-gray close-add">返回</span>
+      </div>
+      </div>
+    </div>
+ 
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

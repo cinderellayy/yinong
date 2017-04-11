@@ -33,17 +33,17 @@
   padding-left: 20px;
   border-bottom: 1px solid #ddd;
 }
-.add{
- background:url("../images/add.png") #ffa018 no-repeat;
+.scheduling-add{
+ background:url("../images/tu_06.png") #ffa018 no-repeat;
+ color:#ffffff;
  margin-right: 16px;
 }
 .delete {
-   background:url("../images/add.png") #e0e0e0 no-repeat;
+   background:url("../images/tu_09.png") #e0e0e0 no-repeat;
 }
-.add,.delete {
+.scheduling-add,.delete {
     height: 30px;
     line-height: 30px;
-    color: #ffffff;
     float: right;
     background-position: 10px 8px;
     background-size: 15px auto;
@@ -51,6 +51,11 @@
     padding: 0 13px 0 31px;
 }
 
+.scheduling-icon {
+  vertical-align: middle;
+  width: 14px;
+  margin-right: 7px;
+}
 
 /*分页样式*/
 .page {
@@ -153,6 +158,38 @@ padding: 2px 5px;
 }
 .bg-table tr:nth-child(2n+1){
   background-color: #f7feff;
+}
+/*添加排产管理*/
+.add-detail {
+  padding: 20px 20px 0 20px;
+}
+.add-detail .jidi-address{
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  margin:0 40px 20px 0;
+  border-radius: 2px;
+  box-sizing:border-box;
+}
+.add-detail .add-active {
+  border: 1px solid #ffa018; 
+  color: #ffa018;  
+}
+.add-detail table tr {
+  height: 40px;
+  line-height: 40px;
+} 
+.pinzhong {
+border: 1px solid #dddddd;
+height: 27px;
+width: 50px;
+margin-top: 10px;
+margin-right: 10px;
+}
+input[type="date" i]{
+  font-family: "微软雅黑" !important;
 }
 
 /*排产计划*/

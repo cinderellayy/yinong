@@ -216,7 +216,9 @@ section {
   background-color: #fff;
 }
 
-
+.pointer{
+  cursor: pointer;
+}
 a,
 span,
 p,
@@ -317,10 +319,13 @@ li {
   margin-top: -9.5px;
 }
 .mt20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .mt30 {
   margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px !important;
 }
 .mt86 {
   margin-top: 86px;
@@ -344,6 +349,9 @@ li {
 .w20 {
   width: 20px !important;
 }
+.w40 {
+  width: 40px;
+}
 .h16 {
   height: 16px;
 }
@@ -353,6 +361,9 @@ li {
 }
 .h30 {
   height: 30px;
+}
+.h40 {
+  height: 40px;
 }
 .h50 {
   height: 50px;
@@ -371,6 +382,9 @@ li {
 }
 .pb10{
   padding-bottom: 10px;
+}
+.pb16{
+  padding-bottom: 16px;
 }
 .bg-blue {
   background-color: #00a0e9;
@@ -407,7 +421,8 @@ li {
   border-right: 1px solid #eeeeee;
 }
 .border {
-  border: 1px solid #eeeeee;
+  border: 1px solid #dddddd;
+  z-index: 999999;
 }
 .pb0 {
   padding-bottom: 0;
@@ -534,7 +549,7 @@ footer {
 
 .dialog-content table {
   background-color: transparent;
-  width: 60%;
+  /*width: 60%;*/
   margin: 0 auto;
 }
 .dialog-content table tr {
@@ -572,6 +587,12 @@ footer {
   text-indent: 12px;
 }
 /*table月份*/
+.table-month {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+
+}
 .table-month td:nth-child(2n+1){
   background-color: #e0e0e0;
   width: 91px;
