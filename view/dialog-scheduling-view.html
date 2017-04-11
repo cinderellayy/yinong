@@ -20,10 +20,10 @@
         <input type="text">
         <button>搜索</button>
         <span class="delete">导出</span>
-        <span class="add">添加</span>
+        <span class="scheduling-add">添加</span>
       </div>
       <div class="scheduling-detail bg-table">
-        <table>
+        <table class="text-left">
           <tr>
             <th class="table-head">大棚名称</th>
             <th class="table-head">排产作物</th>
@@ -41,10 +41,10 @@
             <td>2017-04-10</td>
             <td>2017-04-10</td>
             <td>
-              <a  class="mr20 scheduling-view">查看</a>
-              <a class="mr20 scheduling-edit">编辑</a>
-              <a class="mr20">确认</a>
-              <span>删除</span>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
           <tr>
@@ -55,10 +55,10 @@
             <td>2017-04-10</td>
             <td>2017-04-10</td>
             <td>
-              <a  class="mr20 scheduling-view">查看</a>
-              <span class="mr20 scheduling-edit">编辑</span>
-              <span class="mr20">确认</span>
-              <span>删除</span>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
           <tr>
@@ -69,10 +69,10 @@
             <td>2017-04-10</td>
             <td>2017-04-10</td>
             <td>
-              <a  class="mr20 scheduling-view">查看</a>
-              <span class="mr20 scheduling-edit">编辑</span>
-              <span class="mr20">确认</span>
-              <span>删除</span>
+              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
+              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
+              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
         </table>
@@ -94,32 +94,46 @@
         </div>
       </div>
     </div>
+    <!-- 添加排产管理未选基地-->
+  <!--   <div class="dialog-scheduling scheduling-add-content hide">
+      <div class="dialog-content">
+        <p class="center border-bottom pb16">选择基地<span class="right color-gray close-add">X</span></p>
+        <div class="add-detail center border-bottom">
+        <span  class="jidi-address">北沟村</span><span class="jidi-address">进步村</span><span class="jidi-address">北沟村</span> <br>
+        <span class="jidi-address">北沟村</span><span class="jidi-address">进步村</span><span class="jidi-address">北沟村</span> <br>
+        <span class="jidi-address">北沟村</span><span class="jidi-address">进步村</span><span class="jidi-address">北沟村</span> <br>
+        </div>
+      <div class="center mt20">
+            <span class="button bg-yellow mr20">保存</span>
+            <span class="button bg-gray close-add">返回</span>
+          </div>
+      </div>
+    </div> -->
     <!-- 查看排产管理 -->
     <div class="dialog-scheduling scheduling-view-content">
       <div class="dialog-content">
-          <p class="center border-bottom pb10 mb10">查看排产模型 <span class="right color-gray">X</span></p>
+          <p class="center border-bottom pb10 mb10">查看排产模型 <span class="right color-gray close-view">X</span></p>
         <div class="scheduling-detail">
-          <table>
+          <table class="bg-table border center" border="1">
             <tr>
               <td>排产种植区:</td>
               <td>BJ-01-01号大棚</td>
               <td>排产类型:
-                <td/>
+                </td>
                 <td>计划排产</td>
             </tr>
             <tr>
               <td>排产种植区:</td>
               <td>BJ-01-01号大棚</td>
               <td>排产类型:
-                <td/>
+                </td>
                 <td>计划排产</td>
             </tr>
             <tr>
               <td>排产种植区:</td>
               <td>BJ-01-01号大棚</td>
-              <td>排产类型:
-                <td/>
-                <td>计划排产</td>
+              <td>排产类型:</td>
+              <td>计划排产</td>
             </tr>
           </table>
         </div>
@@ -161,12 +175,12 @@
           </table>
           <p class="text-right mt20">总产量: 0kg/亩</p>
         </div>
-        <div class="center"><span class="bg-gray  button">返回</span></div>
+        <div class="center"><span class="bg-gray  button close-view">返回</span></div>
       </div>
     </div>
     <!-- 编辑排查管理 -->
     <div class="dialog-scheduling scheduling-edit-content hide">
-      <div class="dialog-content">
+      <div class="dialog-content mt40">
         <p class="center border-bottom pb10 mb10">编辑排产模型 <span class="right color-gray close-edit">X</span></p>
         <div class="scheduling-detail">
           <table>
@@ -302,6 +316,7 @@
         </div>
       </div>
     </div>
+
 </body>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/main.js"></script>
