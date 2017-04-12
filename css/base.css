@@ -340,8 +340,8 @@ li {
 .w08 {
   width: 80%;
 }
-.w07 {
-  width: 72%;
+.w075 {
+  width: 75% !important;
 }
 .w8 {
   width: 8px;
@@ -544,7 +544,7 @@ footer {
 .dialog-content {
   background-color: #fff;
   padding: 16px 20px;
-  margin: 100px auto; 
+  margin: 100px auto 0 auto; 
   width: 600px;
 }
 
@@ -574,6 +574,10 @@ footer {
   border: 1px solid #dddddd;
   width: 160px;
   text-indent: 12px;
+  border-radius: 3px;
+  font-family: "微软雅黑";
+  color: #333333;
+
 }
 .select-210 {
   height: 30px;
@@ -588,18 +592,18 @@ footer {
   text-indent: 12px;
 }
 /*table月份*/
-.table-month {
-  height: 20px;
-  line-height: 20px;
+.table-month tr {
+  height: 20px !important;
+  line-height: 20px !important;
   text-align: center;
 
 }
 .table-month td:nth-child(2n+1){
   background-color: #e0e0e0;
-  width: 91px;
+  width: 80px;
 }
 .table-month td:nth-child(2n){
-  width: 160px;
+  width: 140px;
   overflow: hidden;
 
 }
