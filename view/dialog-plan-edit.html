@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>排产计划</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>计划<i class="color-gray arrow">></i>计划</span>
+    </nav>
+    <div class="scheduling-content"> 
+    </div>
+    <div class="plan-edit">
+      <div class="plan-edit-title plr16">编辑实际信息</div>
+      <div class="plan-edit-content">
+        <div class="message border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">信息</p>
+          <p>地块： BJ-01-03号大棚</p>
+          <p>种植品种: <input type="text" class="select-160"></p>
+          <p>种植标准：<span class="grow-rule mr4">有机</span><span class="grow-rule mr4 bg-green">无机</span><span class="grow-rule">有机</span></p>
+          <p>种植面积：<input type="text" class="select-160"> <span>亩/3.9</span></p>
+        </div>
+        <div class="time border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">时间</p>
+          <p>定植时间：<input type="date" class="select-160"></p>
+          <p>采收开始：<input type="date" class="select-160"></p>
+          <p>植种结束：<input type="date" class="select-160">
+        </div>
+        <div class="output  border-bottom mb20">
+           <p><img src="../images/cc_12.png" class="mr10">产量预估</p>
+           <div id="container" style="height: 150px"></div>
+        </div>
+        <div class="month">
+            <p class="pb16"><img src="../images/cc_12.png" class="mr10">亩商品量(kg/亩)</p>
+            <table class="border table-month" border="1" style="width:330px;">
+              <tr>
+                <td>1月份</td>
+                <td></td>
+                <td>2月份</td>
+                <td></td>
+                <td>3月份</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4月份</td>
+                <td></td>
+                <td>5月份</td>
+                <td></td>
+                <td>6月份</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7月份</td>
+                <td></td>
+                <td>8月份</td>
+                <td></td>
+                <td>9月份</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10月份</td>
+                <td></td>
+                <td>11月份</td>
+                <td></td>
+                <td>12月份</td>
+                <td></td>
+              </tr>
+            </table>
+            <p class="text-right mt20">总产量: 0kg/亩</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="../js/main.js"></script>
+
+
+
+
+</html>
