@@ -43,8 +43,8 @@
             <td>
               <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
               <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
-              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
-              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+              <span class="mr20 scheduling-done pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
           <tr>
@@ -57,8 +57,8 @@
             <td>
               <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
               <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
-              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
-              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+              <span class="mr20 scheduling-done pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
           <tr>
@@ -71,8 +71,8 @@
             <td>
               <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
               <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
-              <span class="mr20 pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
-              <span class="pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+              <span class="mr20 scheduling-done pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
           </tr>
         </table>
@@ -95,7 +95,7 @@
       </div>
     </div>
     <!-- 添加排产管理未选基地-->
-  <!--   <div class="dialog-scheduling scheduling-add-content hide">
+    <div class="dialog-scheduling scheduling-add-content hide">
       <div class="dialog-content">
         <p class="center border-bottom pb16">选择基地<span class="right color-gray close-add">X</span></p>
         <div class="add-detail center border-bottom">
@@ -108,37 +108,47 @@
             <span class="button bg-gray close-add">返回</span>
           </div>
       </div>
-    </div> -->
+    </div>
     <!-- 查看排产管理 -->
     <div class="dialog-scheduling scheduling-view-content">
       <div class="dialog-content">
-          <p class="center border-bottom pb10 mb10">查看排产模型 <span class="right color-gray close-view">X</span></p>
+          <p class="center border-bottom pb10 mb10">查看排产计划<span class="right color-gray close-view">X</span></p>
         <div class="scheduling-detail">
           <table class="bg-table border center" border="1">
             <tr>
-              <td>排产种植区:</td>
-              <td>BJ-01-01号大棚</td>
-              <td>排产类型:
-                </td>
-                <td>计划排产</td>
-            </tr>
-            <tr>
-              <td>排产种植区:</td>
-              <td>BJ-01-01号大棚</td>
-              <td>排产类型:
-                </td>
-                <td>计划排产</td>
-            </tr>
-            <tr>
-              <td>排产种植区:</td>
-              <td>BJ-01-01号大棚</td>
+              <td>所在大棚:</td>
+              <td>BG-DJ-02号大棚</td>
               <td>排产类型:</td>
               <td>计划排产</td>
+            </tr>
+            <tr>
+              <td>作物种类:</td>
+              <td>油菜</td>
+              <td>排产品种:</td>
+              <td>小油菜</td>
+            </tr>
+            <tr>
+              <td>排产标准:</td>
+              <td>有机</td>
+              <td>排产时间:</td>
+              <td>2017-05-01</td>
+            </tr>
+            <tr>
+              <td>采收开始:</td>
+              <td>2017-08-01</td>
+              <td>排产结束:</td>
+              <td>2017-08-20</td>
+            </tr>
+            <tr>
+              <td>追溯排产名称:</td>
+              <td></td>
+              <td>排产面积:</td>
+              <td>3.07亩</td>
             </tr>
           </table>
         </div>
         <div class="scheduling-detail mt20">
-          <p class="text-left border-bottom pb10 mb10">亩商品量(kg/亩)</p>
+          <p class="text-left border-bottom pb10 mb10">预估产量：亩产量(kg)</p>
           <table class="border table-month" border="1">
             <tr>
               <td>1月份</td>
@@ -160,7 +170,7 @@
               <td>7月份</td>
               <td></td>
               <td>8月份</td>
-              <td></td>
+              <td>7384.0</td>
               <td>9月份</td>
               <td></td>
             </tr>
@@ -178,103 +188,52 @@
         <div class="center"><span class="bg-gray  button close-view">返回</span></div>
       </div>
     </div>
-    <!-- 编辑排查管理 -->
+    <!-- 编辑排产管理 -->
     <div class="dialog-scheduling scheduling-edit-content hide">
-      <div class="dialog-content mt40">
-        <p class="center border-bottom pb10 mb10">编辑排产模型 <span class="right color-gray close-edit">X</span></p>
-        <div class="scheduling-detail">
-          <table>
-            <tr>
-              <td><span class="mr10">作物品种:</span>金妃</td>
-              <td><span class="mr10">种植品种:</span>金妃</td>
-            </tr>
-            <tr>
-              <td><span class="mr10">种植标准:</span>
-                <select class="select-160">
-                  <option>有机</option>
-                  <option>无机</option>
-                </select>
-              </td>
-              <td><span class="mr10">种植环境:</span>
-                <select class="select-160">
-                  <option>高温</option>
-                  <option>常温</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td><span class="mr10">定值时间:</span>
-                <select class="select-72">
-                  <option>一月</option>
-                  <option>二月</option>
-                  <option>三月</option>
-                  <option>四月</option>
-                  <option>五月</option>
-                  <option>六月</option>
-                  <option>七月</option>
-                  <option>八月</option>
-                  <option>九月</option>
-                  <option>十月</option>
-                  <option>十一月</option>
-                  <option>十二月</option>
-                </select> -
-                <select class="select-72">
-                  <option>上旬</option>
-                  <option>中旬</option>
-                  <option>下旬</option>
-                </select>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><span class="mr10">采收开始:</span>
-                <select class="select-72">
-                  <option>一月</option>
-                  <option>二月</option>
-                  <option>三月</option>
-                  <option>四月</option>
-                  <option>五月</option>
-                  <option>六月</option>
-                  <option>七月</option>
-                  <option>八月</option>
-                  <option>九月</option>
-                  <option>十月</option>
-                  <option>十一月</option>
-                  <option>十二月</option>
-                </select> -
-                <select class="select-72">
-                  <option>上旬</option>
-                  <option>中旬</option>
-                  <option>下旬</option>
-                </select>
-              </td>
-              <td><span class="mr10">采收结束:</span>
-                <select class="select-72">
-                  <option>一月</option>
-                  <option>二月</option>
-                  <option>三月</option>
-                  <option>四月</option>
-                  <option>五月</option>
-                  <option>六月</option>
-                  <option>七月</option>
-                  <option>八月</option>
-                  <option>九月</option>
-                  <option>十月</option>
-                  <option>十一月</option>
-                  <option>十二月</option>
-                </select> -
-                <select class="select-72">
-                  <option>上旬</option>
-                  <option>中旬</option>
-                  <option>下旬</option>
-                </select>
-              </td>
-            </tr>
-          </table>
+      <div class="dialog-content">
+        <p class="center border-bottom pb10 mb10">编辑排产计划 <span class="right color-gray close-edit">X</span></p>
+        <div class="add-detail mb10">
+            <p class="mb10"><span class="mr30">种植区:</span><select class="select-160 mr20">
+              <option>BJ-01-01号大棚</option>
+              <option>BJ-01-01号大棚</option>
+            </select>
+              作物种类：
+            <select class="select-160">
+                <option>小黄瓜</option>
+              <option>茄子</option>
+            </select><p>
+            <p class="mb10">
+              种植品种：
+            <select class="select-160 mr20">
+              <option>无品种</option>
+              <option>西兰花</option>
+            </select>
+              种植标准：
+             <select class="select-160">
+              <option>无机</option>
+               <option>有机</option>
+            </select>
+            </p>
         </div>
-        <div class="scheduling-detail mt20">
-          <p class="text-left border-bottom pb10 mb10">亩商品量(kg/亩)</p>
-          <table class="border table-month" border="1">
+        <p class="text-left border-bottom pb10 mt20">采收信息</p>
+        <div class="add-detail mb10">
+          <p>定植时间：
+            <input type="date" class="select-160 mr20">
+            采收开始：
+             <input type="date" class="select-160">
+          </p>
+          <p class="mb10">植种结束：
+            <input type="date" class="select-160 mr20">
+            种植面积：
+            <input type="text" class="pinzhong"> <span>亩/3.9亩可用</span>
+          </p>
+          <p>预估产量：
+            <select class="select-160 mr20">
+              <option>亩产量</option>
+              <option>地块产量</option>
+            </select>
+          </p>
+          <table class="border table-month w075 mt20" border="1">
             <tr>
               <td>1月份</td>
               <td></td>
@@ -289,11 +248,11 @@
               <td>5月份</td>
               <td></td>
               <td>6月份</td>
-              <td></td>
+              <td>300</td>
             </tr>
             <tr>
               <td>7月份</td>
-              <td></td>
+              <td>1.0</td>
               <td>8月份</td>
               <td></td>
               <td>9月份</td>
@@ -308,12 +267,96 @@
               <td></td>
             </tr>
           </table>
-          <p class="text-right mt20">总产量: 0kg/亩</p>
-          <div class="center mt20">
-            <span class="button bg-yellow mr20">保存</span>
-            <span class="button bg-gray close-edit">返回</span>
-          </div>
         </div>
+        <div class="center mt20">
+          <span class="button bg-yellow mr20">保存</span>
+          <span class="button bg-gray close-edit">返回</span>
+        </div>
+      
+      </div>
+    </div>
+    <!-- 确认排产管理 -->
+    <div class="dialog-scheduling scheduling-done-content hide">
+      <div class="dialog-content">
+        <p class="center border-bottom pb10 mb10">确认排产计划 <span class="right color-gray close-done">X</span></p>
+        <div class="add-detail mb10">
+            <p class="mb10"><span class="mr30">种植区:</span><select class="select-160 mr20">
+              <option>BJ-01-01号大棚</option>
+              <option>BJ-01-01号大棚</option>
+            </select>
+              作物种类：
+            <select class="select-160">
+                <option>小黄瓜</option>
+              <option>茄子</option>
+            </select><p>
+            <p class="mb10">
+              种植品种：
+            <select class="select-160 mr20">
+              <option>无品种</option>
+              <option>西兰花</option>
+            </select>
+              种植标准：
+             <select class="select-160">
+              <option>无机</option>
+               <option>有机</option>
+            </select>
+            </p>
+          <p>定植时间：
+            <input type="date" class="select-160 mr20">
+            采收开始：
+             <input type="date" class="select-160">
+          </p>
+          <p class="mb10">植种结束：
+            <input type="date" class="select-160 mr20">
+            种植面积：
+            <input type="text" class="pinzhong"> <span>亩/3.9亩可用</span>
+          </p>
+          <p>预估产量：
+            <select class="select-160 mr20">
+              <option>亩产量</option>
+              <option>地块产量</option>
+            </select>
+          </p>
+          <table class="border table-month w075 mt20" border="1">
+            <tr>
+              <td>1月份</td>
+              <td></td>
+              <td>2月份</td>
+              <td></td>
+              <td>3月份</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4月份</td>
+              <td></td>
+              <td>5月份</td>
+              <td></td>
+              <td>6月份</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>7月份</td>
+              <td>1.0</td>
+              <td>8月份</td>
+              <td></td>
+              <td>9月份</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10月份</td>
+              <td></td>
+              <td>11月份</td>
+              <td></td>
+              <td>12月份</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="center mt20">
+          <span class="button bg-yellow mr20">确认</span>
+          <span class="button bg-gray close-done">返回</span>
+        </div>
+      
       </div>
     </div>
 
