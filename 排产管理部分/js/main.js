@@ -34,5 +34,21 @@
   $('.grow-rule').click(function () {
     $(this).addClass('bg-green').siblings().removeClass('bg-green');
   })
+
+  // 排产计划确认
+   $('.scheduling-done').click(function () {
+    $('.scheduling-done-content').removeClass('hide').addClass('show');
+  })
+   $('.close-done').click(function () {
+    $('.scheduling-done-content').removeClass('show').addClass('hide');
+  })
+
+  //删除
+  $(".scheduling-delete").click(function(e) {
+    if (confirm("删除后不可恢复,是否确认删除?")) {
+    }
+  });
+  
+  
   
 })()
