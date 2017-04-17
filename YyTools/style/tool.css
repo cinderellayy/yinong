@@ -1,0 +1,14 @@
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.active-tab {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #00a0e9;
+  color: #fff;
+}
