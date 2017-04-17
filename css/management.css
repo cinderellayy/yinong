@@ -269,3 +269,17 @@ input[type="date" i]{
   margin-top: -60px;
   width: 12px;
 }
+
+/*产量汇总*/
+.table-sum th:first-child,.table-sum td:first-child{
+  border-right:1px solid #dddddd;
+  padding: 0 0;
+  text-align: center;
+  min-width: 84px;
+}
+.table-sum th:last-child,.table-sum td:last-child{
+  border-left:1px solid #dddddd;
+}
+.table-sum tr:last-child{
+  border-top:1px solid #dddddd;
+}
