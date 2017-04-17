@@ -63,7 +63,7 @@
                 <p>大棚： BG-01-01-大棚</p>
                 <p>作物： 青菜(西兰花)</p>
                 <p>面积： 2.8亩</p>
-                <p>定制开始： 2015-03-10</p>
+                <p>定植开始： 2015-03-10</p>
                 <p>采收开始： 2015-03-10</p>
                 <p>预估产量：7000.00 Kg</p>
                 <p>6月： 4000Kg</p>
@@ -129,9 +129,104 @@
         </div>
       </div>
     </div>
+    <!-- 编辑实际信息 -->
+    <div class="plan-edit">
+      <div class="plan-edit-title plr16">编辑实际信息</div>
+      <div class="plan-edit-content">
+         <img src="../images/sss_31.png" class="hide-aside">
+        <div class="message border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">信息</p>
+          <p>地块： BJ-01-03号大棚</p>
+          <p>种植品种: <input type="text" class="select-160"></p>
+          <p>种植标准：<span class="grow-rule mr4">有机</span><span class="grow-rule mr4 bg-green">无机</span><span class="grow-rule">有机</span></p>
+          <p>种植面积：<input type="text" class="select-160"> <span>亩/3.9</span></p>
+        </div>
+        <div class="time border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">时间</p>
+          <p>定植时间：<input type="date" class="select-160"></p>
+          <p>采收开始：<input type="date" class="select-160"></p>
+          <p>植种结束：<input type="date" class="select-160">
+        </div>
+        <div class="output mb20">
+           <p><img src="../images/cc_12.png" class="mr10">产量预估</p>
+           <div id="container" style="height: 150px;width:230px;"></div>
 
+            <table class="border table-month" border="1" style="width:250px;">
+              <tr>
+                <td>1</td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td></td>
+                <td>5</td>
+                <td></td>
+                <td>6</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td>8</td>
+                <td></td>
+                <td>9</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td></td>
+                <td>11</td>
+                <td></td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </table>
+            <p class="text-right mt20">总产量: 0kg/亩</p>
+        </div>
+         <div class="center">
+            <span class="button bg-yellow mr10">保存</span>
+            <span class="button bg-gray mr10">取消</span>
+            <span class="button bg-gray scheduling-delete">删除</span>
+          </div>
+      </div>
+    </div>
 </body>
 <script src="../js/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="../js/main.js"></script>
+<script>
+  //图表相关
+  var chart = Highcharts.chart('container', {
+    xAxis: {
+       categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        labels:{ 
+        step:2 //刻度间隔
+    } 
+    },
+     yAxis:{  
+      title: {  
+            text: ''  
+        },  
+      tickPixelInterval:10 
+    },  
+    title: {  
+      text: ''//标题为空  
+    },  
+    credits: {  
+        enabled: false//右下角图表版权信息不显示  
+    },
+    legend: {  
+      enabled: false//右下角图表版权信息不显示  
+    },  
+    series: [{
+        data: [12, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 594.1, 95.6, 54.4]
+    }]
+});
+
+</script>
 
 </html>

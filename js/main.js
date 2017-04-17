@@ -4,7 +4,7 @@
     $(this).addClass('current').siblings().removeClass('current');
   });
 
-  //排产查看
+  //排产管理查看
   $('.scheduling-view').click(function () {
      $('.scheduling-view-content').removeClass('hide').addClass('show');
   })
@@ -12,7 +12,7 @@
     $('.scheduling-view-content').removeClass('show').addClass('hide');
   })
 
-  //排产编辑
+  //排产管理编辑
   $('.scheduling-edit').click(function () {
     $('.scheduling-edit-content').removeClass('hide').addClass('show');
   })
@@ -29,13 +29,7 @@
   $('.jidi-address').click(function () {
     $(this).addClass('add-active').siblings().removeClass('add-active');
   })
-
-  //排产计划编辑
-  $('.grow-rule').click(function () {
-    $(this).addClass('bg-green').siblings().removeClass('bg-green');
-  })
-
-  // 排产计划确认
+    // 排产管理确认
    $('.scheduling-done').click(function () {
     $('.scheduling-done-content').removeClass('hide').addClass('show');
   })
@@ -48,6 +42,24 @@
     if (confirm("删除后不可恢复,是否确认删除?")) {
     }
   });
+
+  //排产计划模块
+  //排产计划编辑
+  $('.grow-rule').click(function () {
+    $(this).addClass('bg-green').siblings().removeClass('bg-green');
+  })
+
+  //作物产量
+  $('.zuowu,.chanliang').click(function () {
+    $('.plan-edit').animate({
+      width:'300px'
+    })
+  })
+  $('.hide-aside').click(function () {
+    $('.plan-edit').animate({
+      width:'0'
+    })
+  })
   
   
   
