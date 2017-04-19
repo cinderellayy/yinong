@@ -276,7 +276,9 @@ li {
 .text-left {
   text-align: left;
 }
-
+.vs {
+  vertical-align: sub;
+}
 .mr-4{
    margin-right: -4px;
 }
@@ -384,6 +386,9 @@ li {
 }
 .pl0 {
   padding-left: 0 !important;
+}
+.pr10 {
+  padding-right: 10px;
 }
 .prl16 {
   padding: 0 16px;

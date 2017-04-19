@@ -107,7 +107,7 @@ padding: 2px 5px;
 
 }
 .scheduling-content {
-  height: 500px;
+  height: 550px;
   margin:16px 0 0 6px;
   padding: 8px 20px;
   background-color: #ffffff;
@@ -286,17 +286,16 @@ input[type="date" i]{
 
 
 /*种植管理*/
-  .tab {
+  .tab-grow {
     width: 100%;
-    float: left;
     margin-top: 20px;
   }
-  .tab ul{
+  .tab-grow ul{
     border-bottom: 1px solid #479e7d;
     width: 100%;
     margin-bottom: 20px;
   }
-  .tab li{
+  .tab-grow li{
     display: inline-block;
     margin-right: 4px;
     padding: 9px 20px;
@@ -309,6 +308,7 @@ input[type="date" i]{
   margin: 0 0 20px 20px;
   border:1px solid #dddddd;
   box-sizing:border-box;
+
 }
 
 .grow-img {
@@ -323,4 +323,82 @@ input[type="date" i]{
 .grow-time {
   height: 6.5px;
   margin-right: -5px;
+}
+
+/*绿色弹窗*/
+.grow-message {
+  background-color: #479e7d;
+  color:#ffffff;
+  height: 255px;
+  width: 1127px;
+  padding: 20px 15px;
+  box-sizing:border-box;
+}
+.grow-message-img {
+   width: 180px;
+   text-align: center;
+}
+.grow-message-img img{
+  width: 180px;
+  height: 180px;
+  margin-bottom: 6px;
+}
+.tab-mess {
+  height: 203px;
+    overflow: hidden;
+    padding-right: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.tab-message {
+  height: 218px;
+  width: 74px;
+  padding: 10px 6px;
+  text-align: center;
+  background-color: rgba(0,0,0,.14);
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.tab-message li {
+  margin-bottom: 5px;
+  padding: 7px 2px;
+}
+.grow-mess {
+    width: 787px;
+    border-top: 1px solid rgba(238, 238, 238, 0.55);
+    margin: 0 5px 0 20px;
+    font-size: 13px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.grow-mess-user {
+  display: inline-block;
+  margin-right: 16px;
+}
+.grow-mess-user p {
+  margin-top: 4px;
+}
+.grow-mess .stop {
+    width: 151px; 
+    height: 84px;
+    border: 1px solid #eeeeee;
+    margin-right: -5px;
+    overflow: hidden;
+    box-sizing:border-box;
+    padding: 13px 0;
+    text-align: center;
+}
+.grow-mess .stop img{
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+.grow-mess tr {
+  height: 24px;
+  line-height: 24px;
+}
+.grow-mess  td {
+  padding: 0;
+  width:85px;
 }
