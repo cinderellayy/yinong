@@ -1,0 +1,285 @@
+/*公共样式*/
+.color-e0e {
+  color: #e0e0e0;
+}
+.bg-green {
+ background-color: #479e7d;
+ color:#ffffff;
+}
+.bg-yellow {
+  background-color: #ffa018;
+  color:#ffffff;
+}
+.bg-gray {
+  background-color: #e0e0e0;
+  color:#ffffff;
+}
+.button {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  box-sizing:border-box;
+  border-radius: 3px;
+}
+.arrow {
+  font-size: 18px;
+  margin:0 6px;
+}
+.nav-head {
+  background-color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.scheduling-add{
+ background:url("../images/tu_06.png") #ffa018 no-repeat;
+ color:#ffffff;
+ margin-right: 16px;
+}
+.delete {
+   background:url("../images/tu_09.png") #e0e0e0 no-repeat;
+}
+.scheduling-add,.delete {
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    background-position: 10px 8px;
+    background-size: 15px auto;
+    display: inline-block;
+    padding: 0 13px 0 31px;
+}
+
+.scheduling-icon {
+  vertical-align: middle;
+  width: 14px;
+  margin-right: 7px;
+}
+
+/*分页样式*/
+.page {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+}
+.digg { 
+padding: 3px;
+ margin: 3px; 
+ text-align: center;
+ float: right;
+} 
+.digg input {
+  width: 40px;
+  height: 23px;
+  text-align: center;
+  border: #eee 1px solid; 
+}
+.digg .go {
+  background-color: #ffa018;
+  color: #fff;
+  padding:4px 6px; 
+  display: inline-block;
+}
+.digg a { 
+padding:2px 5px; 
+margin: 2px; 
+color: #333333;
+text-decoration: none 
+} 
+.digg a:hover,.digg a:active,.digg .current{ 
+color:#ffa018;
+} 
+.digg .change {
+border: #eee 1px solid; 
+padding: 2px 5px;
+}
+.digg span.disabled { 
+ color: #ddd; 
+} 
+
+
+/*排产管理模块*/
+.scheduling-main {
+  margin-left: 177px;
+  position: relative;
+
+}
+.scheduling-content {
+  height: 600px;
+  margin:16px 0 0 6px;
+  padding: 8px 20px;
+  background-color: #ffffff;
+}
+.scheduling-search input{
+  width: 210px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing:border-box;
+  border: 1px solid #dddddd;
+  text-indent: 12px;
+} 
+.scheduling-search button {
+  height: 30px;
+  line-height: 30px;
+  width: 60px;
+  width: 60px;
+  background-color: #479e7d;
+  border: 1px solid #479e7d;
+  box-sizing:border-box;
+  color: #ffffff;
+  margin-left: -4px;
+}
+
+.scheduling-detail table {
+  width: 100%;
+  margin-top: 12px;
+  /*text-align: left;*/
+
+}
+.scheduling-detail .table-head{
+  color: #ffffff;
+  background-color: #479e7d;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+}
+.scheduling-detail td {
+   padding: 0 20px;
+}
+.scheduling-detail tr{
+  height: 33px;
+  line-height: 33px;
+  padding: 0 20px;
+}
+
+.bg-table tr:nth-child(2n){
+    background-color: #ffffff;
+}
+.bg-table tr:nth-child(2n+1){
+  background-color: #f7feff;
+}
+/*添加排产管理*/
+.add-detail {
+  padding: 20px 20px 0 20px;
+}
+.add-detail .jidi-address{
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  margin:0 40px 20px 0;
+  border-radius: 2px;
+  box-sizing:border-box;
+}
+.add-detail .add-active {
+  border: 1px solid #ffa018; 
+  color: #ffa018;  
+}
+.add-detail table tr {
+  height: 40px;
+  line-height: 40px;
+} 
+.pinzhong {
+border: 1px solid #dddddd;
+height: 27px;
+width: 50px;
+margin-top: 10px;
+margin-right: 10px;
+border-radius: 3px;
+}
+input[type="date" i]{
+  font-family: "微软雅黑" !important;
+  color: #333333;
+}
+
+/*排产计划*/
+.zuowu,
+.chanliang {
+  color:#ffffff;
+  padding: 0 16px;
+  text-align: center; 
+}
+.zuowu {
+  background-color: #ffa018;
+}
+.chanliang {
+  background-color: #479e7d;
+}
+.zuowu-chanliang {
+  position: relative;
+}
+.zuowu-chanliang:hover .scheduling-fuceng {
+  display: block;
+}
+
+/*编辑排产计划*/
+.plan-edit {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100%;
+  width: 0;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.plan-edit-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #479e7d;
+  color:#ffffff;
+  margin:0;
+  text-indent: 16px;
+}
+.plan-edit-content {
+  padding: 16px;
+}
+.plan-edit-content
+.message,
+.plan-edit-content
+.time,
+.plan-edit-content .output {
+  padding-bottom: 16px;
+}
+.plan-edit-content
+.message p,
+.plan-edit-content
+.time p,
+.plan-edit-content .output p {
+  padding-bottom: 12px;
+}
+.grow-rule {
+  border:1px solid #dddddd;
+  height: 30px;
+  line-height: 30px;
+  width: 48px;
+  text-align: center;
+}
+.hide-aside {
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  margin-top: -60px;
+  width: 12px;
+}
+
+/*产量汇总*/
+.table-sum th:first-child,.table-sum td:first-child{
+  border-right:1px solid #dddddd;
+  padding: 0 0;
+  text-align: center;
+  min-width: 84px;
+}
+.table-sum th:last-child,.table-sum td:last-child{
+  border-left:1px solid #dddddd;
+}
+.table-sum tr:last-child{
+  border-top:1px solid #dddddd;
+}

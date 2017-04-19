@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>排产计划</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>生产计划<i class="color-gray arrow">></i>排产计划</span>
+    </nav>
+    <div class="scheduling-content">
+      <div class="scheduling-search">
+        <span>年份：</span>
+        <select class="select-210 mr20">
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+        </select>
+        <span>作物品种：</span>
+        <select class="select-210 mr20">
+          <option>玉米</option>
+          <option>水稻</option>
+          <option>大豆</option>
+        </select>
+        <input type="text" placeholder="请输入区域">
+        <button>搜索</button>
+      </div>
+      <div class="scheduling-detail">
+        <table class="border tr-26">
+          <tr class="h26">
+            <td rowspan="2" class="border"></td>
+            <td colspan="12" class="center border">2017年</td>
+          </tr>
+          <tr class="center  h26">
+            <td class="border">1月</td>
+            <td class="border">2月</td>
+            <td class="border">3月</td>
+            <td class="border">4月</td>
+            <td class="border">5月</td>
+            <td class="border">6月</td>
+            <td class="border">7月</td>
+            <td class="border">8月</td>
+            <td class="border">9月</td>
+            <td class="border">10月</td>
+            <td class="border">11月</td>
+            <td class="border">12月</td>
+          </tr>
+          <tr class="border-right">
+            <td class="border-right">BG-HG-1号大棚 <span class="right">2.8亩</span></td>
+            <td></td>
+            <td colspan="12" class="border-right zuowu-chanliang">
+              <span class="zuowu" style="width:25%">大黄瓜种植
+              </span>
+              <span class="chanliang" style="width:43%;">预估产量333000.33Kg</span>
+              <div class="scheduling-fuceng">
+                <p>大棚： BG-01-01-大棚</p>
+                <p>作物： 青菜(西兰花)</p>
+                <p>面积： 2.8亩</p>
+                <p>定植开始： 2015-03-10</p>
+                <p>采收开始： 2015-03-10</p>
+                <p>预估产量：7000.00 Kg</p>
+                <p>6月： 4000Kg</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="border-right">BG-HG-1号大棚 <span class="right">2.8亩</span></td>
+            <td colspan="13" class="border-right pl0 zuowu-chanliang">
+              <span class="bg-green prl16 center chanliang" style="width:34%;">预估产量333000.33Kg</span>
+               <div class="scheduling-fuceng">
+                <p>大棚： BG-01-01-大棚</p>
+                <p>作物： 青菜(西兰花)</p>
+                <p>面积： 2.8亩</p>
+                <p>定制开始： 2015-03-10</p>
+                <p>采收开始： 2015-03-10</p>
+                <p>预估产量：7000.00 Kg</p>
+                <p>6月： 4000Kg</p>
+              </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td class="border-right">BG-HG-1号大棚 <span class="right">2.8亩</span></td>
+            <td colspan="4"></td>
+            <td colspan="8" class="border-right zuowu-chanliang">
+              <span class="bg-yellow prl16 center zuowu" style="width:25%">大黄瓜种植</span>
+              <span class="bg-green prl16 center chanliang" style="width:43%;">预估产量333000.33Kg</span>
+               <div class="scheduling-fuceng">
+                <p>大棚： BG-01-01-大棚</p>
+                <p>作物： 青菜(西兰花)</p>
+                <p>面积： 2.8亩</p>
+                <p>定制开始： 2015-03-10</p>
+                <p>采收开始： 2015-03-10</p>
+                <p>预估产量：7000.00 Kg</p>
+                <p>6月： 4000Kg</p>
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="border-right"></td>
+            <td colspan="4"></td>
+            <td colspan="8" class="border-right">
+            </td>
+          </tr>
+        </table>
+        <div class="page">
+          <div class="left">
+            <span class="mr20">共21条</span>
+            <span>共2页</span>
+          </div>
+          <div class="digg">
+            <span class="change">上一页</span>
+            <a href="#?page=1" class="current">1</a>
+            <a href="#?page=2">2</a>
+            <a href="#?page=3">3</a> ...
+            <a href="#?page=199">10</a>
+            <span href="#?page=2" class="change">下一页</span>
+            <span>跳转 <input type="text" value="2"></span>
+            <span class="go">GO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 编辑实际信息 -->
+    <div class="plan-edit">
+      <div class="plan-edit-title plr16">编辑实际信息</div>
+      <div class="plan-edit-content">
+         <img src="../images/sss_31.png" class="hide-aside">
+        <div class="message border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">信息</p>
+          <p>地块： BJ-01-03号大棚</p>
+          <p>种植品种: <input type="text" class="select-160"></p>
+          <p>种植标准：<span class="grow-rule mr4">有机</span><span class="grow-rule mr4 bg-green">无机</span><span class="grow-rule">有机</span></p>
+          <p>种植面积：<input type="text" class="select-160"> <span>亩/3.9</span></p>
+        </div>
+        <div class="time border-bottom mb20">
+          <p><img src="../images/cc_12.png" class="mr10">时间</p>
+          <p>定植时间：<input type="date" class="select-160"></p>
+          <p>采收开始：<input type="date" class="select-160"></p>
+          <p>植种结束：<input type="date" class="select-160">
+        </div>
+        <div class="output mb20">
+           <p><img src="../images/cc_12.png" class="mr10">产量预估</p>
+           <div id="container" style="height: 150px;width:230px;"></div>
+
+            <table class="border table-month" border="1" style="width:250px;">
+              <tr>
+                <td>1</td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td></td>
+                <td>5</td>
+                <td></td>
+                <td>6</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td>8</td>
+                <td></td>
+                <td>9</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td></td>
+                <td>11</td>
+                <td></td>
+                <td>12</td>
+                <td></td>
+              </tr>
+            </table>
+            <p class="text-right mt20">总产量: 0kg/亩</p>
+        </div>
+         <div class="center">
+            <span class="button bg-yellow mr10">保存</span>
+            <span class="button bg-gray mr10">取消</span>
+            <span class="button bg-gray scheduling-delete">删除</span>
+          </div>
+      </div>
+    </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  //图表相关
+  var chart = Highcharts.chart('container', {
+    xAxis: {
+       categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+        labels:{ 
+        step:2 //刻度间隔
+    } 
+    },
+     yAxis:{  
+      title: {  
+            text: ''  
+        },  
+      tickPixelInterval:10 
+    },  
+    title: {  
+      text: ''//标题为空  
+    },  
+    credits: {  
+        enabled: false//右下角图表版权信息不显示  
+    },
+    legend: {  
+      enabled: false//右下角图表版权信息不显示  
+    },  
+    series: [{
+        data: [12, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 594.1, 95.6, 54.4]
+    }]
+});
+
+</script>
+
+</html>
