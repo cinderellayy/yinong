@@ -351,7 +351,7 @@ input[type="date" i]{
     float: left;
 }
 .tab-message {
-  height: 218px;
+  height: 180px;
   width: 74px;
   padding: 10px 6px;
   text-align: center;
@@ -359,6 +359,7 @@ input[type="date" i]{
   display: inline-block;
   box-sizing: border-box;
   overflow: hidden;
+  float: left;
 }
 .tab-message li {
   margin-bottom: 5px;
@@ -367,10 +368,11 @@ input[type="date" i]{
 .grow-mess {
     width: 787px;
     border-top: 1px solid rgba(238, 238, 238, 0.55);
-    margin: 0 5px 0 20px;
+    margin: 0 5px 0 0;
     font-size: 13px;
     padding: 10px 0;
     overflow: hidden;
+    float: left;
 }
 .grow-mess-user {
   display: inline-block;
@@ -401,4 +403,10 @@ input[type="date" i]{
 .grow-mess  td {
   padding: 0;
   width:85px;
+}
+
+.border-mess-left {
+   margin: 0 10px 0 6px;
+   height:227px;
+    width:10px;
 }
