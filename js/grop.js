@@ -5,12 +5,14 @@ var tools = {
     });
 
     $('.to-grow-message').click(function() {
-      $(this).parent().siblings('.grow-message,.arrow-grow').removeClass('hide');
+      $('.grow-message').removeClass('hide');
+      $('.arrow-grow').addClass('hide');
+      $(this).parent().siblings('.arrow-grow').removeClass('hide');
     });
     
     $('.close-grow').click(function() {
-      $(this).parent('.grow-message').addClass('hide');
-      $(this).parent('.grow-message').siblings('.arrow-grow').addClass('hide')
+      $('.grow-message').addClass('hide');
+      $('.arrow-grow').addClass('hide');
     });
   },
   tab: function (a) {
