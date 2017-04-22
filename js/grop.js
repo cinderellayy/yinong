@@ -29,6 +29,21 @@ var tools = {
      $('.close-add').click(function () {
       $('.scheduling-add-content').removeClass('show').addClass('hide');
     });
+
+     //导出种植信息
+    $('.scheduling-upload').click(function () {
+      $('.scheduling-upload-content').removeClass('hide').addClass('show');
+    });
+     $('.close-upload').click(function () {
+      $('.scheduling-upload-content').removeClass('show').addClass('hide');
+    });
+
+    //删除
+  $(".grow-delete").click(function(e) {
+    if (confirm("删除后不可恢复,是否确认删除?")) {
+    }
+  });
+
   },
   tab: function (a) {
     var tab = $(a).parent().parent(".tab");

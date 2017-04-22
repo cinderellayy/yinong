@@ -10,6 +10,9 @@
   background-color: #ffa018;
   color:#ffffff;
 }
+.color-green {
+  color:#479e7d;
+}
 .bg-gray {
   background-color: #e0e0e0;
   color:#ffffff;
@@ -50,8 +53,12 @@
     background-size: 15px auto;
     display: inline-block;
     padding: 0 13px 0 31px;
+    cursor: pointer;
 }
 
+.scheduling-upload {
+    cursor: pointer;
+}
 .scheduling-icon {
   vertical-align: middle;
   width: 14px;
@@ -496,3 +503,24 @@ input[type="date" i]{
 .nongshi  tr td:first-child,.nongshi  tr td:last-child {
   width: 25px;
 }
+/*导入种植信息*/
+.mess-download {
+  margin-left: 41px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.mess-upload {
+ margin-bottom: 20px;
+cursor: pointer;
+ }
+.mess-download p,.mess-upload  p{
+      margin: 20px 0 10px 0;
+ }
+
+ /*农事评估弹窗*/
+ .dash {
+  width: 100px;
+  margin: 0 10px;
+  height: 5px;
+  border-top: 1px dashed #dddddd;
+ }

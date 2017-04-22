@@ -297,6 +297,9 @@ li {
 .mr30 {
   margin-right: 30px !important;
 }
+.mr44{
+  margin-right: 44px !important;
+} 
 
 .ml30 {
   margin-left: 30px;
@@ -315,6 +318,9 @@ li {
 
 .mb20 {
   margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
 }
 .mt2 {
   margin-top: 2px;
@@ -559,6 +565,7 @@ footer {
   padding: 16px 20px;
   margin: 100px auto 0 auto; 
   width: 600px;
+  overflow: hidden;
 }
 
 .dialog-content table {
