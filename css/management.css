@@ -146,6 +146,17 @@ padding: 2px 5px;
   /*text-align: left;*/
 
 }
+.scheduling-plan table {
+  width: inherit;
+}
+.scheduling-plan table td {
+  padding: 0 !important;
+ 
+}
+.table-plan-month {
+   box-sizing:border-box;
+   width:79px;
+}
 .scheduling-detail .table-head{
   color: #ffffff;
   background-color: #479e7d;
@@ -356,7 +367,7 @@ input[type="date" i]{
   position: absolute;
   top: 108px;
   left: 0;
-  z-index: 99999;
+  z-index: 999;
 }
 .close-grow {
   position: absolute;
@@ -524,3 +535,87 @@ cursor: pointer;
   height: 5px;
   border-top: 1px dashed #dddddd;
  }
+
+ /*农事记录*/
+ .record-title {
+  border-bottom: 1px solid #dddddd;
+  height: 138px;
+  margin-bottom: 30px;
+  box-sizing:border-box;
+
+ }
+ .record-title-img {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+ }
+ .record-icon {
+      position: absolute;
+    width: 28px;
+    right: -9px;
+    top: -10px;
+
+ }
+ .record-zhiwu {
+  width: 120px;
+  height: 120px;
+  border:1px solid #dddddd;
+  border-radius: 1px;
+  padding: 1px;
+
+ }
+ .record-title-content {
+  margin-left:146px;
+ }
+.timeline{
+ margin-left: 134px;
+
+
+}
+.timeline li{
+  position: relative;
+  width: 100%;
+  border-left: 2px solid #479e7d;
+}
+.timeline li::before{
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #479e7d;
+  position: absolute;
+  left: -8px;
+  top: -24px;
+}
+.timeline li time{
+    position: absolute;
+    left: -98px;
+    top: -22px;
+    /* width: 25%; */
+    font-size: 14px;
+    color: #bbbbbbb;
+    text-align: center;
+}
+.timeline-content{
+  margin: 0 0 36px 30px;
+  padding: 0 0 20px 0;
+}
+.timeline-content p{
+  margin-bottom: 10px;
+}
+.to-grow-nongshi {
+    width: 100px;
+    text-align: center;
+     height: 25px; 
+    margin-right: 14px;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #ffa018;
+    box-sizing: border-box;
+    border-radius: 2px;
+    float: right;
+    overflow: hidden;
+    margin-top: -9px;
+    cursor: pointer;
+}

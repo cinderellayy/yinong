@@ -22,12 +22,19 @@ var tools = {
       $('.arrow-grow').addClass('hide');
     });
 
-    //添加排产管理
+    //添加种植信息
     $('.scheduling-add').click(function () {
       $('.scheduling-add-content').removeClass('hide').addClass('show');
     });
      $('.close-add').click(function () {
       $('.scheduling-add-content').removeClass('show').addClass('hide');
+    });
+    //编辑种植信息
+    $('.scheduling-edit').click(function () {
+      $('.scheduling-edit-content').removeClass('hide').addClass('show');
+    });
+     $('.close-edit').click(function () {
+      $('.scheduling-edit-content').removeClass('show').addClass('hide');
     });
 
      //导出种植信息
@@ -43,6 +50,14 @@ var tools = {
     if (confirm("删除后不可恢复,是否确认删除?")) {
     }
   });
+
+  //农事评估
+    $('.to-grow-nongshi').click(function () {
+      $('.scheduling-nongshi-content').removeClass('hide').addClass('show');
+    });
+     $('.close-nongshi').click(function () {
+      $('.scheduling-nongshi-content').removeClass('show').addClass('hide');
+    });
 
   },
   tab: function (a) {

@@ -283,7 +283,7 @@ li {
    margin-right: -4px;
 }
 .mr4 {
-  margin-right: 4px;
+  margin-right: 4px !important;
 }
 
 .mr10 {
@@ -321,6 +321,9 @@ li {
 }
 .mb30 {
   margin-bottom: 30px;
+}
+.mb44 {
+  margin-bottom: 44px;
 }
 .mt2 {
   margin-top: 2px;
@@ -390,6 +393,7 @@ li {
 .r10 {
   right: 10px;
 }
+
 .pl0 {
   padding-left: 0 !important;
 }
@@ -559,6 +563,7 @@ footer {
   height: 100%;
   background-color: rgba(0,0,0,.6);
   overflow: auto;
+  z-index: 999999;
 }
 .dialog-content {
   background-color: #fff;
