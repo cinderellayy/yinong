@@ -139,6 +139,7 @@ padding: 2px 5px;
   /*text-align: left;*/
 
 }
+
 .scheduling-detail .table-head{
   color: #ffffff;
   background-color: #479e7d;
@@ -148,6 +149,9 @@ padding: 2px 5px;
 }
 .scheduling-detail td {
    padding: 0 20px;
+}
+.plan-table table td {
+  width: 200px;
 }
 .scheduling-detail tr{
   height: 33px;
