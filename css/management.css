@@ -624,3 +624,24 @@ cursor: pointer;
     margin-top: -9px;
     cursor: pointer;
 }
+.to-grow-message1 {
+  cursor: pointer;
+}
+
+
+/*采收记录*/
+.remarks {
+  margin-left: 28px;
+}
+.remarks span {
+  float: left;
+
+}
+.remarks textarea{
+  width: 405px;
+  height: 106px;
+  margin-left: 4px;
+  border-color: rgb(221, 221, 221);
+  border-radius: 3px;
+
+}

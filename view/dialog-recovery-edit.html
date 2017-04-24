@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>种植管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>产中管理<i class="color-gray arrow">></i>种植管理</span>
+    </nav>
+    <div class="scheduling-content">
+     
+    
+    </div>
+   
+    <!-- 编辑采收-->
+    <div class="dialog-scheduling scheduling-edit-content">
+      <div class="dialog-content">
+        <p class="center border-bottom pb10">编辑采收<span class="right color-gray close-add">X</span></p>
+         <p class="text-left border-bottom pb10 mt20">作物信息</p>
+        <div class="add-detail mb10">
+            <p class="mb10">
+              <span class="">采收作物：</span>
+              <select class="select-160 mr20">
+                <option>BJ-01-01号大棚</option>
+                <option>BJ-01-01号大棚</option>
+              </select>
+              等级： 
+              <select class="select-160">
+                <option>一等品</option>
+                <option>二等品</option>
+              </select>
+            </p>
+            <p style="margin-left: 28px;">单价：
+              <input type="text" class="select-160"> 元
+            </p>
+        </div>
+        <p class="text-left border-bottom pb10 mt20">采收信息</p>
+        <div class="add-detail mb10">
+          <p class="mb10" style="margin-left: 14px;">采收人：
+            <input type="text" class="select-160 mr20">
+            采收时间：
+             <input type="date" class="select-160">
+          </p>
+          <p class="mb10">采收重量：
+            <input type="text" class="select-160"> 公斤
+          </p>
+        </div>
+
+        <p class="text-left border-bottom pb10 mt20">运输及储存</p>
+        <div class="add-detail mb10">
+          <p class="mb10">采收入库：
+            <select class="select-160 mr20">
+              <option>3号库</option>
+              <option>4号库</option>
+            </select>
+            经办人：
+            <select class="select-160">
+              <option>无</option>
+              <option>王忠平</option>
+            </select>
+          </p>
+          <p class="mb10">采收出库：
+            <input type="text" class="select-160"> 公斤
+          </p>
+          <p class="remarks">
+            <span>备注：</span>
+            <textarea></textarea>
+          </p>
+        </div>
+        <div class="center mt20">
+          <span class="button bg-yellow mr20">保存</span>
+          <span class="button bg-gray close-add">返回</span>
+        </div>
+      </div>
+    </div>  
+  </div>
+  
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/grop.js"></script>
+
+</html>
