@@ -675,3 +675,45 @@ cursor: pointer;
   margin-left: 30px;
   vertical-align: bottom;
 }
+
+.recovery-record select {
+  background: url(../images/tu_22.png) no-repeat  right 4px;
+  border: 0;
+  color: #fff;
+  background-color: #479e7d;
+  margin-left: 10px;
+  direction: rtl;
+  padding-right: 16px;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+.recovery-record select option {
+  font-size: 12px;
+}
+#date-range {
+  width: 200px;
+   border: 0;
+  color: #fff;
+  background-color: #479e7d;
+  text-align: right;
+}
+
+.recovery-date {
+  width: 16px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+input[type="checkbox"] {
+  margin-right: 4px;
+}
+.recovery-detail td {
+  padding: 0 10px !important;
+}
+.recovery-detail .dengji{
+  padding: 0 10px;
+  height: 24px;
+  line-height: 1.7;
+  margin: 0 7px;
+  margin-bottom: -2px;
+}   

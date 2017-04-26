@@ -6,6 +6,7 @@
   <title>农事管理</title>
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/management.css">
+  <link rel="stylesheet" href="../css/daterangepicker.css" />
 </head>
 
 <body>
@@ -24,46 +25,65 @@
       <div class="scheduling-search">
         <input type="text">
         <button>搜索</button>
-        <span><img src="../images/tu_21.png"  class="delete-condition">清除所有条件</span>
+        <span class="delete-all-condition"><img src="../images/tu_21.png"  class="delete-condition">清除所有条件</span>
         <span class="delete">导出</span>
-        <span class="scheduling-add">添加</span>
+        <a class ="right" href="dialog-recovery-add.html"><span class="scheduling-add">添加</span></a>
       </div>
-      <div class="scheduling-detail bg-table">
+      <div class="scheduling-detail bg-table recovery-detail">
         <table>
-          <tr >
-            <td class="table-head">农事管理表</td>
+          <tr style="background-color: #479e7d;">
+            <td class="table-head"> <input type="checkbox" name="recovery">农事管理表</td>
             <td class="table-head"></td>
             <td class="table-head"></td>
-            <td class="table-head"></td>
+            <td class="table-head right recovery-record">
+              <input id="date-range" size="40" value="选择时间"> 
+              <img src="../images/tu_22.png" height="13" width="13">
+              <select>
+                <option selected>区域</option>
+                <option>BJ-01</option>
+              </select>
+              <select>
+                <option selected>采收</option>
+                <option>BJ-01</option>
+              </select>
+              <select>
+                <option selected>等级</option>
+                <option>一等</option>
+              </select>
+              <select>
+                <option selected>采收人</option>
+                <option>王中平</option>
+              </select>
+            </td>
           </tr>
           <tr>
-            <td>05月18日</td>
+            <td> <img src="../images/c_31.png"  class="recovery-date">05月18日</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>BJ-01-01号大棚(芹菜)</td>
+            <td>
+              <input type="checkbox" name="recovery">BJ-01-01号大棚(芹菜) 
+              <span class="bg-green dengji">二等品</span> 
+              <p class="color-gray" style="margin-top: -7px;">采收时间：1.0小时 2017-03-01 采收人：榆树农业局</p>
+            </td>
             <td>单价 <span class="color-yellow">2.5</span> 元</td>
             <td>采收量 <span class="color-yellow">800.0</span> 斤</td>
             <td class="right">
-              <span  class="mr20 scheduling-view pointer"><img src="../images/tu_18.png" class="scheduling-icon">查看</span>
-              <span class="mr20 scheduling-edit pointer"><img src="../images/tu_15.png" class="scheduling-icon">编辑</span>
-              <span class="mr20 scheduling-done pointer"><img src="../images/tu_01.png" class="scheduling-icon">确认</span>
+              <a  class="mr20 scheduling-view pointer" href="dialog-recovery-record.html"><img src="../images/tu_18.png" class="scheduling-icon">查看</a>
+              <a class="mr20 scheduling-edit pointer" href="dialog-recovery-edit.html"><img src="../images/tu_15.png" class="scheduling-icon">编辑</a>
+              <a class="mr20 scheduling-done pointer" href="dialog-recovery-add.html"><img src="../images/tu_01.png" class="scheduling-icon">确认</a>
               <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td>
-          </tr>
-       
+          </tr>       
         </table>
       </div>
-    
     </div>
-   
-  
   </div>
-  
 </body>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/grop.js"></script>
-
+<script src="../js/moment.min.js"></script>
+<script src="../js/jquery.daterangepicker.js"></script>
+<script src="../js/recovery.js"></script>
 </html>
