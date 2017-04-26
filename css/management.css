@@ -13,6 +13,9 @@
 .color-green {
   color:#479e7d;
 }
+.color-yellow {
+  color: #ffa018;
+}
 .bg-gray {
   background-color: #e0e0e0;
   color:#ffffff;
@@ -644,4 +647,31 @@ cursor: pointer;
   border-color: rgb(221, 221, 221);
   border-radius: 3px;
 
+}
+ 
+/*采收记录*/
+.recovery-banner {
+  overflow: hidden;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  height: 32px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.recovery-banner span {
+  margin-left: 8px;
+  overflow: hidden;
+  padding: 5px 8px 9px 8px;
+  border-bottom: 2px solid transparent;
+}
+.recovery-banner .recovery-banner-active {
+  color: #479e7d;
+  border-bottom: 2px solid #479e7d;
+
+}
+.delete-condition {
+  width:16px;
+  margin-right: 6px;
+  margin-left: 30px;
+  vertical-align: bottom;
 }

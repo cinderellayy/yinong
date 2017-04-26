@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Date Picker Demo</title>
+		<link rel="stylesheet" href="daterangepicker.css" />
+		<script src="jquery-1.11.2.min.js"></script>
+		<script src="moment.min.js"></script>
+		<script src="jquery.daterangepicker.js"></script>
+	</head>
+	<body>
+
+	<input id="date-range0" size="40" value="选择时间"> 
+
+	<script>
+	$(function()
+	{
+		$('a.show-option').click(function(evt)
+		{
+			evt.preventDefault();
+			$(this).siblings('.options').slideToggle();
+		});
+
+		$('#date-range0').dateRangePicker(
+	{}).bind('datepicker-change',function(event,obj)
+	{
+		/* This event will be triggered when second date is selected */
+		console.log('change',obj);
+		// obj will be something like this:
+		// {
+		// 		date1: (Date object of the earlier date),
+		// 		date2: (Date object of the later date),
+		//	 	value: "2013-06-05 to 2013-06-07"
+		// }
+	})
+	
+
+	})
+
+
+	</script>
+
+	</body>
+</html>
