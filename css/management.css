@@ -717,3 +717,32 @@ input[type="checkbox"] {
   margin: 0 7px;
   margin-bottom: -2px;
 }   
+
+/*预售管理*/
+.sale-record a{
+  width: 60px;
+  height: 27px;
+  margin-right: -6px;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+.sale-record a:nth-child(1) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: 0;
+  border-right: 1px solid #dddddd;
+}
+.sale-record a:nth-child(3) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-right: 0;
+  border-right: 1px solid #dddddd;
+}
+.sale-record a:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
