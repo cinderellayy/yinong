@@ -1,0 +1,38 @@
+<html>  
+  <head>  
+      
+    <title>日历控件</title>  
+    <meta charset="UTF-8"> 
+    <script type="text/javascript" src="../js/jquery.min.js"></script>  
+    <script type="text/javascript" src="../js/WdatePicker.js"></script>  
+    <script type="text/javascript">  
+         $(function(){  
+              $("#reset").click(function(){  
+                      
+              });  
+         });  
+    </script>  
+  </head>  
+    
+  <body>  
+     <table>  
+        <tr>  
+          <td>  
+            <label>按日统计：</label>  
+            <input id="byDay" type="text" class="Wdate" onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>  
+          </td>  
+          <td>  
+            <label>按周统计：</label>  
+            <input type="text" class="Wdate" id="byWeek" onFocus="WdatePicker({isShowWeek:true,onpicked:function() {$dp.$('d122_1').value=$dp.cal.getP('W','W');$dp.$('d122_2').value=$dp.cal.getP('W','WW');}})"/>  
+          </td>  
+          <td>  
+            <label>按月统计：</label>  
+            <input class="Wdate" type="text" id="byMonth" onFocus="WdatePicker({dateFmt:'yyyy-MM'})"/>  
+          </td>  
+          <td>  
+            <input type="reset" id="reset" value="重置"/>  
+          </td>  
+        </tr>  
+     </table>  
+  </body>  
+</html>
