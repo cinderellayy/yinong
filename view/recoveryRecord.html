@@ -18,9 +18,9 @@
     </nav>
     <div class="scheduling-content">
       <div class="recovery-banner">
-        <span class="recovery-banner-active">采收记录</span>
-        <span>预采管理</span>
-        <span>预售管理</span>
+        <a class="recovery-banner-active" href="recoveryRecord.html">采收记录</a>
+        <a>预采管理</a>
+        <a href="recoverySale.html">预售管理</a>
       </div>
       <div class="scheduling-search">
         <input type="text">
@@ -90,4 +90,10 @@
 <script src="../js/moment.min.js"></script>
 <script src="../js/jquery.daterangepicker.js"></script>
 <script src="../js/recovery.js"></script>
+<script type="text/javascript">
+  $('#date-range').dateRangePicker({})
+    .bind('datepicker-change',function(event,obj){
+    console.log('change',obj);
+  })
+</script>
 </html>

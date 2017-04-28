@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>农事管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+  <link rel="stylesheet" href="../css/daterangepicker.css" />
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>产中管理<i class="color-gray arrow">></i>农事管理</span>
+    </nav>
+    <div class="scheduling-content">
+      <div class="recovery-banner">
+        <a  href="recoveryRecord.html">采收记录</a>
+        <a>预采管理</a>
+        <a class="recovery-banner-active" href="recoverySale.html">预售管理</a>
+      </div>
+      <div class="scheduling-search">
+        <span class="mr10">预采收时间</span>
+        <input type="date" class="mr10" style="width:160px;">
+        <span class="mr10">预采时间类型</span>
+        <select class="select-160 mr10">
+          <option>全部</option>
+          <option>按日</option>
+          <option>按周</option>
+          <option>按月</option>
+          <option>按年</option>
+        </select>
+        <span class="mr10">预采类型</span>
+        <select class="select-160">
+          <option>全部</option>
+          <option>按大棚</option>
+          <option>安作物</option>
+        </select>
+        <button style="height: 30px;line-height: 22px; margin-left: 10px;">搜索</button>
+        <select class="right bg-yellow add-yucai">
+          <option>添加预采</option>
+          <option>按大棚</option>
+          <option>按作物</option>
+        </select>
+      </div>
+      <div class="scheduling-detail bg-table table-td">
+        <table class="text-left">
+          <tr>
+            <th class="table-head">预采时间</th>
+            <th class="table-head">预采类型</th>
+            <th class="table-head">预采棚数量</th>
+            <th class="table-head">预采作物数量</th>
+            <th class="table-head">预采总量</th>
+            <th class="table-head">入录人</th>
+            <th class="table-head">入录时间</th>
+            <th class="table-head">操作</th>
+          </tr>
+          <tr> 
+            <td>2017-04-01 - 2017-04-15</td>
+            <td>按作物预采</td>
+            <td>--</td>
+            <td>1</td>
+            <td>30.0KG</td>
+            <td>榆树农业局</td>
+            <td>2017-04-01</td>
+            <td>
+              <a  class="mr20 scheduling-view pointer" href="dialog-recovery-record.html"><img src="../images/tu_18.png" class="scheduling-icon">查看</a>
+              <a class="mr20 scheduling-edit pointer" href="dialog-recovery-edit.html"><img src="../images/tu_15.png" class="scheduling-icon">编辑</a>
+              <a class="mr20 scheduling-done pointer" href="dialog-recovery-print.html"><img src="../images/tu_09.png" class="scheduling-icon">导出</a>
+              <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+            </td> 
+          </tr>
+          <tr> 
+            <td>2017-04-01 - 2017-04-15</td>
+            <td>按作物预采</td>
+            <td>--</td>
+            <td>1</td>
+            <td>30.0KG</td>
+            <td>榆树农业局</td>
+            <td>2017-04-01</td>
+            <td>
+              <a  class="mr20 scheduling-view pointer" href="dialog-recovery-record.html"><img src="../images/tu_18.png" class="scheduling-icon">查看</a>
+              <a class="mr20 scheduling-edit pointer" href="dialog-recovery-edit.html"><img src="../images/tu_15.png" class="scheduling-icon">编辑</a>
+              <a class="mr20 scheduling-done pointer" href="dialog-recovery-print.html"><img src="../images/tu_09.png" class="scheduling-icon">导出</a>
+              <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
+            </td> 
+          </tr>
+        </table>     
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/recovery.js"></script>
+</html>
