@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>种植管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>产中管理<i class="color-gray arrow">></i>种植管理</span>
+    </nav>
+    <div class="scheduling-content">
+    </div>
+    <!-- 打印采收 -->
+    <div class="dialog-scheduling recovery-mgmt-content">
+      <div class="dialog-content scheduling-detail">
+        <p class="center border-bottom pb10">编辑<a class="right color-gray close-add" href="recoveryMgmt.html">X</a></p>
+         <p class="text-left mt20 scheduling-search">  
+          <input type="text">
+          <button class="mr20">搜索</button>
+          <span class="mr20">录入时间：2017-04-12</span>
+          <span class="mr20">入录人：榆树农业局</span>
+        </p>
+        <p class="mt20"> 
+          <span class="mr20">预采时间选择：<img src="../images/tu_34.png" height="16" width="16" style="vertical-align: bottom;margin-right: 4px;">按日</span>
+           <span class="mr20 color-gray">选择预采时间：2017-04-13 - 2017-04-18</span>
+        </p>
+        <table class="bg-table border" border="1">
+          <tr>
+            <th>序号</th>
+            <th>作物名称</th>
+            <th>等级</th>
+            <th>2017-04-15</th>
+            <th>操作</th>
+          </tr>
+          <tr> 
+            <td>1</td>
+            <td>红苋菜</td>
+            <td>
+              <select class="select-160">
+                <option>一等品</option>
+                <option>二等品</option>
+                <option>三等品</option>
+              </select>
+            </td>   
+            <td><input type="text" class="select-160"></td>
+           <td class="color-green"><span class="add-zuowu-row"><img src="../images/tu_35.png" height="19" width="24" style="vertical-align: sub">添加</span></td>
+          </tr>
+          <tr> 
+            <td>1</td>
+            <td>红苋菜</td>
+            <td>
+              <select class="select-160">
+                <option>一等品</option>
+                <option>二等品</option>
+                <option>三等品</option>
+              </select>
+            </td>   
+            <td><input type="text" class="select-160"></td>
+            <td class="color-green"><span class="add-zuowu-row"><img src="../images/tu_35.png" height="19" width="24" style="vertical-align: sub">添加</span></td>
+          </tr>
+        </table>     
+        <div class="center mt20">
+          <a class="button bg-gray close-add" href="recoveryMgmt.html">返回</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+  
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/recovery.js"></script>
+
+</html>

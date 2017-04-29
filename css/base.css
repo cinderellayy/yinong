@@ -92,6 +92,7 @@ input,
 select,
 textarea {
   font-size: 100%;
+  font-family: "微软雅黑";
 }
 
 textarea {
@@ -197,7 +198,9 @@ sub {
   bottom: -0.25em;
 }
 
-
+h3,h4,h5,h6 {
+  font-family: "微软雅黑";
+}
 /*resetcss结束*/
 
 
@@ -371,6 +374,9 @@ li {
 }
 .w40 {
   width: 40px;
+}
+.w80 {
+  width:80px !important;
 }
 .h16 {
   height: 16px;
@@ -564,7 +570,7 @@ footer {
   height: 100%;
   background-color: rgba(0,0,0,.6);
   overflow: auto;
-  z-index: 999999;
+  z-index: 999998;
 }
 .dialog-content {
   background-color: #fff;

@@ -700,9 +700,9 @@ cursor: pointer;
 }
 #date-range {
   width: 200px;
-   border: 0;
-  color: #fff;
-  background-color: #479e7d;
+  border: 0;
+ /* color: #fff;
+  background-color: #479e7d;*/
   text-align: right;
 }
 
@@ -778,4 +778,20 @@ input[type="checkbox"] {
 .add-yucai option {
   background-color: #ffffff;
   color: #333333;
+}
+.recovery-mgmt-content .dialog-content {
+  width: 1143px !important;
+}
+.recovery-mgmt-content table th {
+  background-color: #e0e0e0;
+  padding:3px 20px;
+  border:1px solid #cccaca;
+  text-align: center;
+}
+.recovery-mgmt-content table td {
+  text-align: center;
+   padding:3px 20px;
+}
+.date-picker-wrapper {
+  z-index: 999999 !important;
 }

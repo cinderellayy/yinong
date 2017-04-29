@@ -19,8 +19,8 @@
     <div class="scheduling-content">
       <div class="recovery-banner">
         <a  href="recoveryRecord.html">采收记录</a>
-        <a>预采管理</a>
-        <a class="recovery-banner-active" href="recoverySale.html">预售管理</a>
+        <a class="recovery-banner-active" href="recoveryMgmt.html">预采管理</a>
+        <a href="recoverySale.html">预售管理</a>
       </div>
       <div class="scheduling-search">
         <span class="mr10">预采收时间</span>
@@ -40,10 +40,10 @@
           <option>安作物</option>
         </select>
         <button style="height: 30px;line-height: 22px; margin-left: 10px;">搜索</button>
-        <select class="right bg-yellow add-yucai">
+        <select class="right bg-yellow add-yucai" onchange="s_click(this)">
           <option>添加预采</option>
-          <option>按大棚</option>
-          <option>按作物</option>
+          <option value="dialog-recoverymgmt-add1.html">按作物</option>
+          <option value="dialog-recoverymgmt-add2.html">按大棚 </a></option>   
         </select>
       </div>
       <div class="scheduling-detail bg-table table-td">
@@ -67,9 +67,9 @@
             <td>榆树农业局</td>
             <td>2017-04-01</td>
             <td>
-              <a  class="mr20 scheduling-view pointer" href="dialog-recovery-record.html"><img src="../images/tu_18.png" class="scheduling-icon">查看</a>
-              <a class="mr20 scheduling-edit pointer" href="dialog-recovery-edit.html"><img src="../images/tu_15.png" class="scheduling-icon">编辑</a>
-              <a class="mr20 scheduling-done pointer" href="dialog-recovery-print.html"><img src="../images/tu_09.png" class="scheduling-icon">导出</a>
+              <a  class="mr20 scheduling-view pointer" href="dialog-recoverymgmt-view.html"><img src="../images/tu_18.png" class="scheduling-icon">查看</a>
+              <a class="mr20 scheduling-edit pointer" href="dialog-recoverymgmt-edit.html"><img src="../images/tu_15.png" class="scheduling-icon">编辑</a>
+              <a class="mr20 scheduling-done pointer" href="javascript:void(0)"><img src="../images/tu_09.png" class="scheduling-icon">导出</a>
               <span class="scheduling-delete pointer" ><img src="../images/tu_21.png" class="scheduling-icon">删除</span>
             </td> 
           </tr>
