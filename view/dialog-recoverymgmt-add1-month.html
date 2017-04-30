@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>种植管理</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/management.css">
+  <link rel="stylesheet" href="../css/daterangepicker.css" />
+  <script src="../js/jquery.min.js"></script>
+<script src="../js/moment.min.js"></script>
+<!-- <script src="../js/jquery.daterangepicker.js"></script> -->
+<script src="../js/month.js"></script>
+<script src="../js/recovery.js"></script>
+</head>
+
+<body>
+  <header></header>
+  <aside></aside>
+  <div class="scheduling-main">
+    <nav class="nav-head">
+      <span>产中管理<i class="color-gray arrow">></i>种植管理</span>
+    </nav>
+    <div class="scheduling-content">
+    </div>
+    <!-- 添加 -->
+    <div class="dialog-scheduling recovery-mgmt-content">
+      <div class="dialog-content scheduling-detail">
+        <p class="center border-bottom pb10">按作物添加<a class="right color-gray close-add" href="recoveryMgmt.html">X</a></p>
+         <p class="text-left mt20 scheduling-search">  
+          <input type="text">
+          <button class="mr20">搜索</button>
+          <span class="mr20">录入时间：2017-04-12</span>
+          <span class="mr20">入录人：榆树农业局</span>
+        </p>
+        <p class="mt20  scheduling-search" > 
+          <span class="mr20">预采时间选择：
+            <img src="../images/tu_36.png" width="16" style="vertical-align: middle;margin-right: 4px;">按日 
+            <img src="../images/tu_36.png" class="ml10" width="16" style="vertical-align: middle;margin-right: 4px;">按周
+            <img src="../images/tu_34.png"  class="ml10" width="16" style="vertical-align: middle;margin-right: 4px;">按月
+            <img src="../images/tu_36.png"  class="ml10" width="16" style="vertical-align: middle;margin-right: 4px;">按年
+          </span>
+          <span class="mr20 ">选择预采时间： <input id="begintime" type="text" onclick="setmonth(this)" readonly="readonly" /> </span>
+          <button class="mr20">确定</button>
+        </p>
+        <table class="bg-table border" border="1">
+          <tr>
+            <th>序号</th>
+            <th>作物名称</th>
+            <th>等级</th>
+            <th>2017-05</th>
+            <th>2017-06</th>
+            <th>2017-07</th>
+            <th>2017-08</th>
+            <th>操作</th>
+          </tr>
+          <tr> 
+            <td>1</td>
+            <td>红苋菜</td>
+            <td>
+              <select class="select-160 w80">
+                <option>一等品</option>
+                <option>二等品</option>
+                <option>三等品</option>
+              </select>
+            </td>   
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td class="color-green">
+              <span class="add-row"><img src="../images/tu_35.png" height="19" width="24" style="vertical-align: sub">添加</span>
+            </td>
+          </tr>
+           <tr> 
+            <td>2</td>
+            <td>红苋菜</td>
+            <td>
+              <select class="select-160 w80">
+                <option>一等品</option>
+                <option>二等品</option>
+                <option>三等品</option>
+              </select>
+            </td>   
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td><input type="text" class="select-160 w80"></td>
+            <td class="color-green"><span class="add-row"><img src="../images/tu_35.png" height="19" width="24" style="vertical-align: sub">添加</span></td>
+          </tr>
+        </table>     
+        <div class="center mt20">
+          <a class="button bg-gray close-add" href="recoveryMgmt.html">返回</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+  
+</body>
+
+
+</html>
